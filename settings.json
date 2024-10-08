@@ -10,7 +10,7 @@
   // 启用字体连字
   "editor.fontLigatures": true,
   // 以像素为单位控制字号。
-  "editor.fontSize": 11,
+  "editor.fontSize": 17,
   // 控制字体粗细。
   "editor.fontWeight": "300",
 
