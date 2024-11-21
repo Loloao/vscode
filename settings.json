@@ -13,78 +13,27 @@
   "editor.fontSize": 17,
   // 控制字体粗细。
   "editor.fontWeight": "300",
+  "editor.lineNumbers": "relative",
 
   "notebook.output.textLineLimit": 30,
-  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "typescript.updateImportsOnFileMote.enabled": "prompt",
 
-  /** vim settings **/
-  "vim.easymotion": false,
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["L"],
-      "commands": ["workbench.action.nextEditor"]
-    },
-    {
-      "before": ["H"],
-      "commands": ["workbench.action.previousEditor"]
-    },
-    {
-      "before": ["T"],
-      "commands": ["workbench.action.closeActiveEditor"]
+  /** neo vim **/
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape"
     }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [">"],
-      "after": [">", "g", "v"]
-    },
-    {
-      "before": ["<"],
-      "after": ["<", "g", "v"]
-    }
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "editor.lineNumbers": "relative",
-  "vim.useSystemClipboard": true,
-  "vim.replaceWithRegister": true,
-  "vim.useCtrlKeys": true,
-  "vim.surround": true,
-  "vim.leader": "<space>",
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<C-h>"],
-      "commands": ["workbench.explorer.fileView.focus"]
-    },
-    {
-      "before": ["<leader>", "f"],
-      "commands": ["workbench.view.search"]
-    },
-    {
-      "before": ["<leader>", "p"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["s"],
-      "after": ["g", "r"]
-    },
-    {
-      "before": ["s", "s"],
-      "after": ["g", "r", "r"]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-d>": false,
-    "<C-a>": false,
-    "<C-f>": true
   },
+
   "workbench.colorTheme": "Firefox Dark",
   "explorer.confirmDragAndDrop": false,
   "files.autoSave": "onFocusChange",
   "security.workspace.trust.untrustedFiles": "open",
-  "githubPullRequests.pullBranch": "never"
+  "githubPullRequests.pullBranch": "never",
+  "tailwindCSS.experimental.configFile": "./tailwind.config.js",
+  "sonarlint.pathToNodeExecutable": "/Users/liyang/.nvm/versions/node/v18.19.1/bin/node",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
